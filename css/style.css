@@ -1,3 +1,7 @@
+body {
+    margin: 0;
+}
+
 .autoWidth {
     width: min(80rem, 100vw - 2rem);
     margin-inline: auto;
