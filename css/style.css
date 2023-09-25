@@ -100,8 +100,16 @@ p {
 .cards>li {
     background-color: lightblue;
     border: solid 2px black;
-    padding: 1rem;
+    padding: 0.5rem;
     margin: 0.5rem;
+}
+
+.cards>li>h2 {
+    margin: 0;
+}
+
+.cards>li>p {
+    margin: 10px 0 10px 0;
 }
 
 footer {
@@ -113,4 +121,14 @@ footer {
 
 footer>*>p>a {
     color: lightblue;
+}
+
+.info {
+    display: flex;
+    flex-direction: row;
+}
+
+img {
+    width: 100%;
+    height: auto;
 }
