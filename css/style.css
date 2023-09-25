@@ -1,0 +1,16 @@
+.autoWidth {
+    width: var(80vw, 100% - 2rem);
+    margin-inline: auto;
+}
+
+.card {
+    background-color: lightblue;
+    border: solid 2px black;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
