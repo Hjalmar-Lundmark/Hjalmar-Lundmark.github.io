@@ -3,18 +3,20 @@ body {
 }
 
 .autoWidth {
-    width: min(80rem, 100vw - 2rem);
+    width: min(55rem, 100vw - 2rem);
     margin-inline: auto;
 }
 
-.card {
-    background-color: lightblue;
-    border: solid 2px black;
-}
-
-ul {
+.cards {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
+}
+
+.cards>li {
+    background-color: lightblue;
+    border: solid 2px black;
+    padding: 1rem;
+    margin: 0.5rem;
 }
