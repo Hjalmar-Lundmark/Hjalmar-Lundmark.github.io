@@ -1,5 +1,5 @@
 .autoWidth {
-    width: var(80vw, 100% - 2rem);
+    width: min(80rem, 100vw - 2rem);
     margin-inline: auto;
 }
 
