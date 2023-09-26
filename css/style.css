@@ -33,9 +33,10 @@
     --space-s-l: clamp(1.13rem, calc(0.63rem + 2.42vw), 2.50rem);
     /*--flow-space:*/
 
-    --color-fg: #333;
-    --color-bg: beige;
-    --color-primary: lightblue;
+    --color-bg: #333;
+    --color-fg: white;
+    --color-primary: darkslategrey;
+    --color-links: lightblue;
 }
 
 body {
@@ -69,6 +70,18 @@ p {
     margin: 0;
 }
 
+a {
+    color: var(--color-links);
+}
+
+a:visited {
+    color: rgb(138, 101, 208);
+}
+
+a:hover {
+    color: rgb(73, 141, 164);
+}
+
 .section {
     padding-top: var(--space-l);
     padding-bottom: var(--space-l);
@@ -92,7 +105,7 @@ p {
 
 .cards>li {
     background-color: var(--color-primary);
-    border: solid 2px black;
+    border: solid 2px var(--color-fg);
     padding: 0.5rem;
     margin: 0.5rem;
 }
