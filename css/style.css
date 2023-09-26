@@ -66,6 +66,7 @@ h3 {
 p {
     font-size: var(--step-0);
     font-weight: 400;
+    margin: 0;
 }
 
 .section {
@@ -107,7 +108,7 @@ p {
 footer {
     background-color: black;
     color: white;
-    padding-bottom: 2rem;
+    padding-bottom: 3rem;
     padding-top: 1rem;
 }
 
@@ -121,14 +122,27 @@ footer>*>p>a {
     gap: 0.5rem;
 }
 
+.infoText {
+    min-width: 65%;
+}
+
 img {
     width: 100%;
     height: 100%;
 }
 
+.skills {
+    margin: 0;
+}
+
 @media (max-width: 600px) {
     .info {
         flex-direction: column;
+    }
+
+
+    .infoText {
+        max-width: 100%;
     }
 
     img {
