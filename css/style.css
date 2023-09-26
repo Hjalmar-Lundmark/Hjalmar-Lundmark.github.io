@@ -120,13 +120,9 @@ a:hover {
 
 footer {
     background-color: black;
-    color: white;
+    color: var(--color-fg);
     padding-bottom: 3rem;
     padding-top: 1rem;
-}
-
-footer>*>p>a {
-    color: lightblue;
 }
 
 .info {
