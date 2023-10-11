@@ -139,6 +139,12 @@ img {
     width: 100%;
 }
 
+.imgContainer {
+    display: flex;
+    justify-content: center;
+    height: fit-content;
+}
+
 .skills {
     margin: 0;
 }
@@ -154,7 +160,6 @@ img {
 
     img {
         width: 50%;
-        height: 50%;
         margin-inline: auto;
     }
 }
