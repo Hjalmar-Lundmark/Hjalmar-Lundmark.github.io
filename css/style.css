@@ -172,7 +172,56 @@ img {
     gap: 1rem;
 }
 
-.pics>img {
+.pics>* {
     width: 100%;
     max-width: 100px;
+}
+
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    padding-top: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 5%;
+    /* Location of the box */
+    left: 0px;
+    top: 0;
+    width: 90%;
+    /* Full width */
+    height: 90%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    /* background-color: rgb(0, 0, 0); */
+    /* Fallback color */
+    /* background-color: rgba(0, 0, 0, 0.4); */
+    /* Black w/ opacity */
+}
+
+.modal-content {
+    margin: auto;
+    text-align: center;
+}
+
+.modal-image {
+    display: inline-block;
+}
+
+/* The Close Button */
+.close {
+    color: lime;
+    display: block;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    text-decoration: none;
+    cursor: pointer;
 }

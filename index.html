@@ -9,6 +9,14 @@
 </head>
 
 <body class="flow">
+    <!-- Dont touch -->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <img src="" id="modal-image" />
+        </div>
+    </div>
+
     <main class="autoWidth">
         <section>
             <h1>Hjalmar's portfolio</h1>
@@ -99,13 +107,12 @@
                     Skills: HTML, CSS, React, Using API, Express.
                 </p>
                 <div class="pics">
-                    <img src="images/1.png" alt="">
-                    <img src="images/2.png" alt="">
-                    <img src="images/3.png" alt="">
-                    <img src="images/4.png" alt="">
-                    <img src="images/5.png" alt="">
-                    <img src="images/6.png" alt="">
-                    <img src="images/7.png" alt="">
+                    <img src="" alt="" id="imageBox1" style="display: none;">
+                    <img src="images/1.png" alt="" onclick="getImg(this)">
+                    <img src="images/2.png" alt="" onclick="getImg(this)">
+                    <img src="images/3.png" alt="" onclick="getImg(this)">
+                    <img src="images/4.png" alt="" onclick="getImg(this)">
+
                 </div>
             </li>
             <li>
@@ -190,6 +197,7 @@
             </p>
         </div>
     </footer>
+    <script src="./js/image.js"></script>
 </body>
 
 </html>
