@@ -163,3 +163,16 @@ img {
         margin-inline: auto;
     }
 }
+
+.pics {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: left;
+    gap: 1rem;
+}
+
+.pics>img {
+    width: 100%;
+    max-width: 100px;
+}
