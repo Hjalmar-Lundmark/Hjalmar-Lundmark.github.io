@@ -175,6 +175,7 @@ img {
 .pics>* {
     width: 100%;
     max-width: 100px;
+    cursor: pointer;
 }
 
 .modal {
