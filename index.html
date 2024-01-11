@@ -8,7 +8,15 @@
     <title>Hjalmar's portfolio</title>
 </head>
 
-<body class="flow">
+<body class="flow" id="body">
+    <!-- Dont touch -->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <img src="" id="modal-image" class="modal-image" />
+        </div>
+    </div>
+
     <main class="autoWidth">
         <section>
             <h1>Hjalmar's portfolio</h1>
@@ -70,7 +78,7 @@
                     </ul>
                 </div>
                 <div class="imgContainer">
-                    <img src="./img/jag.jpg" alt="Hjalmar">
+                    <img src="./images/jag.jpg" alt="Hjalmar">
                 </div>
             </div>
 
@@ -89,6 +97,9 @@
                     <br>
                     Skills: Javascript gamemaking, canvas.
                 </p>
+                <div class="pics">
+                    <img src="./images/ghost.png" alt="" onclick="openImg(this)">
+                </div>
             </li>
             <li>
                 <h2><a href="https://te4-djurklader.netlify.app/">Webshop for animal clothing</a></h2>
@@ -98,6 +109,16 @@
                     database. <br>
                     Skills: HTML, CSS, React, Using API, Express.
                 </p>
+                <div class="pics">
+                    <img src="./images/1.png" alt="" onclick="openImg(this)">
+                    <img src="./images/2.png" alt="" onclick="openImg(this)">
+                    <img src="./images/4.png" alt="" onclick="openImg(this)">
+                    <img src="./images/7.png" alt="" onclick="openImg(this)">
+                    <img src="./images/8.png" alt="" onclick="openImg(this)">
+                    <img src="./images/9.png" alt="" onclick="openImg(this)">
+                    <img src="./images/10.png" alt="" onclick="openImg(this)">
+
+                </div>
             </li>
             <li>
                 <h2><a href="https://te4-weather.netlify.app/">Weather site - Darth Väder</a></h2>
@@ -106,6 +127,12 @@
                     get weather and temperature data of where the user is located. <br>
                     Skills: HTML, CSS, React, Using API.
                 </p>
+                <div class="pics">
+                    <img src="./images/vader1.png" alt="" onclick="openImg(this)">
+                    <img src="./images/vader2.png" alt="" onclick="openImg(this)">
+                    <img src="./images/vader3.png" alt="" onclick="openImg(this)">
+                    <img src="./images/vader4.png" alt="" onclick="openImg(this)">
+                </div>
             </li>
             <li>
                 <h2><a href="https://lukas-johansson.github.io/pizza/">Pizza place</a></h2>
@@ -116,6 +143,12 @@
                     <a href="https://github.com/LeoGabrielsson">Leo Gabrielson</a>. <br>
                     Skills: HTML, CSS.
                 </p>
+                <div class="pics">
+                    <img src="./images/pizza1.png" alt="" onclick="openImg(this)">
+                    <img src="./images/pizza2.png" alt="" onclick="openImg(this)">
+                    <img src="./images/pizza3.png" alt="" onclick="openImg(this)">
+                    <img src="./images/pizza4.png" alt="" onclick="openImg(this)">
+                </div>
             </li>
             <!-- <li>
                 <h2><a href="https://hjalmars-stuff.netlify.app/">My stuff (WIP)</a></h2>
@@ -132,6 +165,11 @@
                     interactive story the user gets to click through. <br>
                     Skills: HTML, CSS, JavaScript.
                 </p>
+                <div class="pics">
+                    <img src="./images/story1.png" alt="" onclick="openImg(this)">
+                    <img src="./images/story2.png" alt="" onclick="openImg(this)">
+                    <img src="./images/story3.png" alt="" onclick="openImg(this)">
+                </div>
             </li>
             <li>
                 <h2><a href="https://test-spelsitedemo.netlify.app/">Christmas game</a></h2>
@@ -139,6 +177,20 @@
                     Small game made with Phazer 3 <br>
                     Skills: JavaScript.
                 </p>
+                <div class="pics">
+                    <img src="./images/Screenshot.jpg" alt="" onclick="openImg(this)">
+                </div>
+            </li>
+            <li>
+                <h2><a href="https://te20-musik.glitch.me/">Music vote*</a></h2>
+                <p><a href="https://github.com/Hjalmar-Lundmark/wsp1-Music-voting">Github repo</a><br>
+                    Page I made at the end of my last year in high school, where my class could vote for their favorite
+                    song to play at the graduation ceremony. <br>
+                    Skills: HTML, CSS, JavaScript/Nodejs backend, Expressjs, MySQL.
+                </p>
+                <div class="pics">
+                    <img src="./images/frontPage_v4.jpg" alt="" onclick="openImg(this)">
+                </div>
             </li>
             <li>
                 <h2><a href="https://grid-ea52d6.netlify.app/s2/">Country api</a></h2>
@@ -154,14 +206,6 @@
                     Small page for reading and downloading my Gymnasiearbete (Swedish equivalent of a bachelor's
                     thesis). <br>
                     Skills: HTML, CSS.
-                </p>
-            </li>
-            <li>
-                <h2><a href="https://te20-musik.glitch.me/">Music vote*</a></h2>
-                <p><a href="https://github.com/Hjalmar-Lundmark/wsp1-Music-voting">Github repo</a><br>
-                    Page I made at the end of my last year in high school, where my class could vote for their favorite
-                    song to play at the graduation ceremony. <br>
-                    Skills: HTML, CSS, JavaScript/Nodejs backend, Expressjs, MySQL.
                 </p>
             </li>
             <li>
@@ -181,6 +225,7 @@
             </p>
         </div>
     </footer>
+    <script src="./js/image.js"></script>
 </body>
 
 </html>
