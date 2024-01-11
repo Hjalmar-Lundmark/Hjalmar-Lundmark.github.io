@@ -141,8 +141,15 @@ img {
 
 .imgContainer {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     height: fit-content;
+}
+
+.cert {
+    width: 50%;
+    cursor: pointer;
+    margin-top: 1rem;
 }
 
 .skills {
