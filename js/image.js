@@ -1,19 +1,22 @@
-let imageBox1 = document.getElementById("imageBox1");
+// let imageBox1 = document.getElementById("imageBox1");
+let modalImage = document.getElementById("modal-image");
+let modal = document.getElementById("myModal");
+let span = document.getElementsByClassName("close")[0];
+let body = document.getElementById("body");
 
 function getImg(smallImg) {
-    imageBox1.src = smallImg.src;
-    var src = smallImg.src;
-    modal.style.display = "block";
+    // imageBox1.src = smallImg.src;
+    let src = smallImg.src;
+    modal.style.display = "flex";
     modalImage.src = src;
+
+    body.style.overflow = "hidden";
 }
 
 // Get the modal image tag
-var modal = document.getElementById("myModal");
 
 // Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
 
-var modalImage = document.getElementById("modal-image");
 
 // When the user clicks the big picture, set the image and open the modal
 // imageBox1.onclick = function (e) {
@@ -25,11 +28,13 @@ var modalImage = document.getElementById("modal-image");
 // When the user clicks on <span> (x), close the modal
 span.onclick = function () {
     modal.style.display = "none";
+    body.style.overflow = "auto";
 };
 
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function (event) {
     if (event.target == modal) {
         modal.style.display = "none";
+        body.style.overflow = "auto";
     }
 };
