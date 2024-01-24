@@ -165,9 +165,13 @@ img {
         max-width: 100%;
     }
 
-    img {
+    .profilePic {
         width: 50%;
         margin-inline: auto;
+    }
+
+    .cert {
+        width: 33%;
     }
 }
 
