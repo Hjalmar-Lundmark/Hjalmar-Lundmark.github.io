@@ -40,7 +40,9 @@ span.onclick = function () {
 
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function (event) {
-    if (event.target == modal) {
+    if (event.target === modal || event.target === document.getElementById("modal-content")
+        || event.target === document.getElementById("modal-upper") || event.target === document.getElementById("modal-inner")
+    ) {
         modal.style.display = "none";
         body.style.overflow = "auto";
     }
