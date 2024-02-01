@@ -3,6 +3,13 @@ let modal = document.getElementById("myModal");
 let span = document.getElementsByClassName("close")[0];
 let body = document.getElementById("body");
 
+let getImgs = document.querySelectorAll("li > div > img");
+let images = [];
+
+getImgs.forEach((image) => {
+    images.push(image.src);
+});
+
 function openImg(smallImg) {
     let src = smallImg.src;
     modal.style.display = "flex";
