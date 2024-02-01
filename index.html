@@ -12,11 +12,13 @@
     <!-- Dont touch -->
     <div id="myModal" class="modal">
         <div class="modal-content">
-            <span class="close">&times;</span>
-            <div>
-                <button onclick="cycleImg(-1)">Left</button>
+            <div class="modal-upper">
+                <span class="close modal-button">&times;</span>
+            </div>
+            <div class="modal-inner">
+                <button onclick="cycleImg(-1)" class="modal-button">&leftarrow;</button>
                 <img src="" id="modal-image" class="modal-image" />
-                <button onclick="cycleImg(1)">Right</button>
+                <button onclick="cycleImg(1)" class="modal-button">&rightarrow;</button>
             </div>
         </div>
     </div>
