@@ -18,6 +18,20 @@ function openImg(smallImg) {
     body.style.overflow = "hidden";
 }
 
+function cycleImg(direction) {
+    let currentImg = modalImage.src;
+    let currentIndex = images.indexOf(currentImg);
+    let nextIndex = currentIndex + direction;
+
+    if (nextIndex < 0) {
+        nextIndex = images.length - 1;
+    } else if (nextIndex > images.length - 1) {
+        nextIndex = 0;
+    }
+
+    modalImage.src = images[nextIndex];
+}
+
 // When the user clicks on <span> (x), close the modal
 span.onclick = function () {
     modal.style.display = "none";
