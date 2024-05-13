@@ -185,7 +185,7 @@ img {
 
 .pics>* {
     width: 100%;
-    max-width: 100px;
+    max-width: 180px;
     cursor: pointer;
 }
 
