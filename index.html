@@ -5,6 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <title>Hjalmar's portfolio</title>
 </head>
 
@@ -15,9 +19,13 @@
                 <button class="close modal-button">&times;</button>
             </div>
             <div class="modal-inner" id="modal-inner">
-                <button onclick="cycleImg(-1)" class="modal-button">&leftarrow;</button>
+                <button onclick="cycleImg(-1)" class="modal-button"><span class="material-symbols-outlined">
+                        arrow_back
+                    </span></button>
                 <img src="" id="modal-image" class="modal-image" />
-                <button onclick="cycleImg(1)" class="modal-button">&rightarrow;</button>
+                <button onclick="cycleImg(1)" class="modal-button"><span class="material-symbols-outlined">
+                        arrow_forward
+                    </span></button>
             </div>
             <div></div>
         </div>
