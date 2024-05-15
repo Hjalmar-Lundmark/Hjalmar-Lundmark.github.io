@@ -231,12 +231,16 @@ img {
 
 .modal-button {
     cursor: pointer;
-    background-color: white;
+    background-color: grey;
     border: 2px solid black;
     border-radius: 200px;
     font-size: 2rem;
     width: 60px;
     height: 60px;
+}
+
+.modal-button:hover {
+    background-color: white;
 }
 
 .modal-image {
@@ -255,10 +259,4 @@ img {
     color: black;
     display: block;
     font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-    text-decoration: none;
-    cursor: pointer;
 }
