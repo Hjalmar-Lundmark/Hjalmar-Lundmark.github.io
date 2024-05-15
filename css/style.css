@@ -254,9 +254,3 @@ img {
     display: flex;
     justify-content: right;
 }
-
-.close {
-    color: black;
-    display: block;
-    font-weight: bold;
-}
