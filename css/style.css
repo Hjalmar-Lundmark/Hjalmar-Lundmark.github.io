@@ -108,8 +108,9 @@ a:hover {
 .cards>li {
     background-color: var(--color-primary);
     border: solid 2px var(--color-fg);
-    padding: 0.5rem;
-    margin: 0.5rem;
+    padding: 1rem;
+    margin: 1rem;
+    margin-bottom: 1.5rem;
 }
 
 .cards>li>h2 {
