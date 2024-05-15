@@ -11,6 +11,10 @@ getImgs.forEach((image) => {
 });
 
 function openImg(smallImg) {
+    if (window.innerWidth < 768) {
+        return;
+    }
+
     let src = smallImg.src;
     modal.style.display = "flex";
     modalImage.src = src;

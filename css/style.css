@@ -158,25 +158,6 @@ img {
     margin: 0;
 }
 
-@media (max-width: 600px) {
-    .info {
-        flex-direction: column;
-    }
-
-    .infoText {
-        max-width: 100%;
-    }
-
-    .profilePic {
-        width: 50%;
-        margin-inline: auto;
-    }
-
-    .cert {
-        width: 33%;
-    }
-}
-
 .pics {
     display: flex;
     flex-direction: row;
@@ -252,4 +233,37 @@ img {
 .modal-upper {
     display: flex;
     justify-content: right;
+}
+
+@media (max-width: 768px) {
+    .info {
+        flex-direction: column;
+    }
+
+    .infoText {
+        max-width: 100%;
+    }
+
+    .profilePic {
+        width: 50%;
+        margin-inline: auto;
+    }
+
+    .cert {
+        width: 33%;
+    }
+
+    .pics {
+        justify-content: center;
+    }
+
+    .pics>*:first-child {
+        display: block;
+        width: 100%;
+        max-width: none;
+    }
+
+    .pics>*:not(:first-child) {
+        display: none;
+    }
 }
