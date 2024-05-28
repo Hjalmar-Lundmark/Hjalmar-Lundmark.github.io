@@ -2,6 +2,7 @@ let modalImage = document.getElementById("modal-image");
 let modal = document.getElementById("myModal");
 let span = document.getElementsByClassName("close")[0];
 let body = document.getElementById("body");
+let text = document.getElementById("modal-text");
 
 let getImgs = document.querySelectorAll("li > div > img");
 let images = [];
@@ -18,6 +19,7 @@ function openImg(smallImg) {
     let src = smallImg.src;
     modal.style.display = "flex";
     modalImage.src = src;
+    text.innerHTML = smallImg.alt;
 
     body.style.overflow = "hidden";
 }
@@ -34,6 +36,7 @@ function cycleImg(direction) {
     }
 
     modalImage.src = images[nextIndex];
+    text.innerHTML = getImgs[nextIndex].alt;
 }
 
 // When the user clicks on <span> (x), close the modal

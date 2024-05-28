@@ -223,6 +223,17 @@ img {
     background-color: white;
 }
 
+.modal-image-div {
+    max-height: 70vh;
+    max-width: 80vw;
+    width: auto;
+    text-align: left;
+}
+
+.modal-image-div>p {
+    max-width: 50vw;
+}
+
 .modal-image {
     display: inline-block;
     max-height: 70vh;
